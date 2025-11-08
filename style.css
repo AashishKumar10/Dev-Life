@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: #ebe06aa7;
+  color: #222;
+  line-height: 1.6;
+  transition: all 0.3s ease-in-out;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.jaat {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  padding: 1.3rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 0px 0px 20px 20px;
+  width: 100%;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-left: 60px;
+}
+
+.jaat ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  margin-left: 50px;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 0;
+
+}
+
+.logo h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+}
+
+.jaat a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.highlight {
+  font-family: 'Dancing Script', cursive;
+  color: teal;
+  font-size: 2rem;
+}
+
+.highlight1 {
+  font-size: 2rem;
+}
+
+.logo {
+  padding-left: 0px;
+}
+
+.image {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+.image {
+  width: 300px;
+  max-width: 100%;
+
+  height: auto;
+  border-radius: 50px;
+  padding: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.about1 {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 2.5;
+  padding-left: 0 20px;
+}
+
+nav a.active {
+  color: #ebe06aa7;
+  font-weight: bold;
+  position: relative;
+  text-shadow: 2 2 2px #ebe06aa7;
+}
+
+nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: 24%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: #ebe06aa7;
+  border-radius: 4px;
+}
+
+.btn {
+  background: teal;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-radius: 7px;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.Contact {
+  text-align: center;
+  margin-left: 405px;
+  text-align: left;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  line-height: 2.5;
+}
+
+.Contact a {
+  text-decoration: none;
+  color: #3c32ad;
+}
+
+footer {
+  background-color: #ebe06aa7;
+  padding: 40px 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.social a {
+  font-size: 24px;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social1 {
+  background-color: #1877F2;
+  color: white;
+  padding: 3px 3px 2px 3px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.social2 {
+  background-color: #0A66C2;
+  color: white;
+  padding: 2px 3px 1px 3px;
+  border-radius: 20%;
+  font-size: 24px;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.social3 {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  color: white;
+  padding: 1px 3px 0px 3px;
+  border-radius: 6px;
+}
+
+.social4 {
+  background-color: #1DA1F2;
+  color: white;
+  padding: 4px 4px 2px 4px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 25px;
+  color: black;
+}
+
+.footerab:hover {
+  color: teal;
+}
+
+
+/*
+1. Index.html 
+{
+Main page = 93 line 
+View My Work 
+{
+Main Page = 202 line
+1 project = 1950 line
+2 project = 2634 line
+3 project = 1358 line
+4 project = 418 line
+5 project = 350 line
+6 project = 143 line      //Total project line = 7055
+}
+About Page = 54 line
+Service Page = 82 line
+blog Page = 84 line
+contact page = 156 line
+}
+}
+2. Portfolio .html
+{
+Main Page = 222
+}
+3. Blog
+{
+Main Page = 250 line
+blog 1 = 84 line
+blog 2 = 77 line
+blog 3 = 91 line
+blog 4 = 90 line
+blog 5 = 82 line
+blog 6 = 76 line
+}
+4. Tools
+{
+Main Page = 140
+Tool 1 = 109 line
+Tool 2 = 108 line
+Tool 3 = 109 line
+Tool 4 = 108 line
+Tool 5 = 107 line
+}
+5. Contact
+{
+Main Page = 180 line
+}
+6. Moon
+{
+Main Page = 158 line
+}
+7. Style.CSS
+{
+Main Page = 240 line
+}
+8. Script.js
+{
+Main Page = 118 line
+}
+
+DevLife = 3050 line
+DevLife Total Page = 28 pages
+Another Project = 7055 line
+
+Total = 10100 line
+
+*/

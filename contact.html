@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cotact</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    .name {
+      border: 1px solid black;
+      border-radius: 20px;
+      margin: 50px 140px 100px;
+    }
+
+    .name h1 {
+      text-align: center;
+      font-size: 50px;
+      margin: 40px;
+    }
+
+    .name1 {
+      padding: 0 150px;
+      font-size: 20px;
+      line-height: 2;
+      padding-bottom: 50px;
+    }
+
+    .name1 a {
+      font-size: 24px;
+      margin: 0 15px;
+      text-decoration: none;
+      color: rgb(60, 80, 80);
+    }
+
+    .name1 a:hover {
+      color: rgb(83, 83, 129);
+    }
+
+    .name h2 {
+      text-align: center;
+      font-size: 35px;
+      margin: 40px;
+    }
+
+    .box {
+      max-width: 400px;
+      padding-left: 170px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 200%;
+      padding: 16px 20px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-size: 18px;
+      padding-bottom: 20px;
+    }
+
+    textarea {
+      width: 200%;
+      padding: 12px 14px;
+      font-size: 16px;
+      height: 100px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+      margin-bottom: 20px;
+    }
+
+    .name3 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .name4 {
+      background: teal;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 20px;
+      display: inline-block;
+      margin: 10px 20px;
+    }
+
+    .name4:hover {
+      background-color: #333;
+      color: #ffffff;
+    }
+
+    #phone {
+      letter-spacing: 1px;
+      padding-left: 8px;
+      font-size: 16px;
+    }
+
+    .name5 {
+      text-align: center;
+      margin: 100px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header class="jaat">
+    <div>
+      <h2 class="logo">♛ ＤｅｖＬｉｆｅ ♛</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="Tools.html">Tools</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a id="theme-toggle" href="moon.html">🌙</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="name">
+    <h1>Contact Me</h1>
+    <div class="name1">
+      <a href="mailto:aashishnain10@gmail.com"><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        aashishnain10@gmail.com</a><br>
+      <a href="tel:+917568400241"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        +91-7568400241</a><br>
+      <a href="https://www.linkedin.com/in/aashish-nain-457a32271/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LinkedIn</a>
+      &nbsp;|&nbsp;
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      &nbsp;|&nbsp;
+      <a href="https://instagram.com/" target="_blank">Instagram</a>
+    </div>
+
+    <h2>Contact Form</h2>
+    <div class="box">
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="off"><br>
+
+      <label for="email">Email</label><br>
+      <input type="text" id="gmail" name="email" placeholder="Enter your email" autocomplete="off"><br>
+
+      <label for="phone">Phone</label><br>
+      <input type="text" id="phone" name="phone" value="+91 " onfocus="moveCursorToEnd(this)" autocomplete="off"><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" placeholder="Write your message here..." autocomplete="off"></textarea>
+    </div>
+
+    <div class="name3">
+      <a href="#" class="name4" onclick="submitForm()" id="submitBtn">Submit</a>
+      <a href="#" class="name4" onclick="resetForm()">Blank Form</a>
+    </div>
+  </div>
+
+  <div class="name5">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19476.196930739967!2d75.15921994114574!3d29.10075969008645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3913efce296a85f5%3A0xc3093f26b926a527!2sBhadra%2C%20Rajasthan%20335501!5e0!3m2!1sen!2sin!4v1752975694413!5m2!1sen!2sin"
+      width="900" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

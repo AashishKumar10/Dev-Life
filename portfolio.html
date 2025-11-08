@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Life</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        .portfolio h1 {
+            text-align: center;
+            margin: 60px;
+            font-size: 55px;
+        }
+
+        .portfolio p {
+            font-weight: bold;
+            font-size: 30px;
+            margin-left: 12%;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .skill-row {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 20px 10%;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .skill-row span {
+            width: 120px;
+            margin-left: 30px;
+            /* font-weight: bold; */
+            font-size: 18px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 12px;
+            background-color: #ddd;
+            margin-right: 20%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: #00b894;
+            width: 70%;
+            /* Change as per skill */
+            border-radius: 10px 0 0 10px;
+        }
+
+        .portfolio1 {
+            padding-left: 80px;
+            line-height: 50px;
+            font-size: 18px;
+            padding: 0 175px;
+            text-align: justify;
+        }
+
+        .portfolio1 a {
+            color: black;
+        }
+
+        .portfolio3 {
+            position: relative;
+            height: 50px;
+            margin-top: 80px;
+            margin-bottom: 90px;
+            /* background-color: #f0f0f0; */
+        }
+
+        .portfolio3 a {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: teal;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-family: 'Outfit', sans-serif;
+            transition: background 0.3s ease;
+        }
+
+        .left-btn {
+            left: 24%;
+        }
+
+        .right-btn {
+            right: 20%;
+        }
+
+        .portfolio3 a:hover {
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header class="jaat">
+        <div>
+            <h2 class="logo">♛ ＤｅｖＬｉｆｅ ♛</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="Tools.html">Tools</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a id="theme-toggle" href="moon.html">🌙</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="portfolio">
+        <h1>Welcome to Portfolio</h1>
+        <p>Skills</p>
+
+        <div class="skill-row">
+            <span>HTML</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 95%;"></div>
+            </div>
+        </div>
+        <div class="skill-row">
+            <span>CSS</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill-row">
+            <span>JAVASCRIPT</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 60%;"></div>
+            </div>
+        </div>
+        <div class="skill-row">
+            <span>BOOTSTRAP</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 50%;"></div>
+            </div>
+        </div>
+        <div class="skill-row">
+            <span>REACT JS</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 30%;"></div>
+            </div>
+        </div>
+        <div class="skill-row">
+            <span>MS WORD</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill-row">
+            <span>TEAM WORK</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 92%;"></div>
+            </div>
+        </div>
+        <p>Projects</p>
+        <ul class="portfolio1">
+            <li>Dev Life</li>
+            <li>Family Introduction</li>
+            <li>Netflix Clone</li>
+            <li>Blinkit Clone</li>
+            <li>Twitter Clone</li>
+            <li>Netflix UI</li>
+            <li>Calculator</li>
+        </ul>
+        <p>Certifications</p>
+        <ul class="portfolio1">
+            <li>📘 RS-CIT Computer Diploma – RKCL (2023)</li>
+            <li>💼 Web Development Internship – ABC Technologies (3 Months, 2024)</li>
+            <li>🎓 MCA (Master of Computer Applications) – [OSGU University,Hisar(Har)], 2025</li>
+            <li>💻 MERN Full Stack Development Course – Ducat Institute (Ongoing, 2025)</li>
+        </ul>
+    </div>
+
+    <div class="portfolio3">
+        <a href="images/resume/Aashish Resume Nov-2025.pdf.pdf" target="_blank" class="left-btn">Explore My CV</a>
+        <a href="images/resume/Aashish Resume Nov-2025.pdf.pdf" download="" class="right-btn">Download My CV</a>
+    </div>
+
+    <footer>
+        <!-- <ul>
+            <li><a class="footerab"  target="_blank" href="about.html">About</a></li>
+            <li><a class="footerab" target="_blank" href="services.html">Services</a></li>
+            <li><a class="footerab" target="_blank" href="blog1.html">Blog</a></li>
+            <li><a class="footerab" target="_blank" href="contact1.html">Contact</a></li>
+        </ul> -->
+        <div class="social">
+            <a class="social1" target="_blank" href="https://www.facebook.com/aashish.nain.399/"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a class="social2" target="_blank" href="https://www.linkedin.com/in/aashish-nain-457a32271/"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a class="social3" target="_blank"
+                href="https://www.instagram.com/accounts/login/?next=%2Flovely______nain%2F&source=omni_redirect"><i
+                    class="fab fa-instagram"></i></a>
+            <a class="social4" target="_blank"
+                href="https://www.instagram.com/accounts/login/?next=%2Flovely______nain%2F&source=omni_redirect"><i
+                    class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 𝟐𝟎𝟐𝟓 𝑫𝒆𝒗𝑳𝒊𝒇𝒆 𝒃𝒚 𝑨𝒂𝒔𝒉𝒊𝒔𝒉 𝑵𝒂𝒊𝒏</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

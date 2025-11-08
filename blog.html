@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Life</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        .blog2 {
+            text-align: center;
+            font-size: 40px;
+            line-height: 2;
+            margin: 100px;
+        }
+
+        #blog {
+            padding: 20px 150px 0 150px;
+        }
+
+        #blog .blog-box {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            width: 100%;
+            position: relative;
+            padding-bottom: 140px;
+        }
+
+        .blog-box,
+        .blog-img,
+        .blog-details h4 p {
+            text-shadow: 3px 3px 5px #c9a349;
+        }
+
+        .blog-box,
+        .blog-img,
+        .blog-details,
+        section {
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        #blog .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            object-position: 50% 20%;
+            border-radius: 40px;
+
+        }
+
+        #blog .blog-img {
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        #blog img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        /* .first-blog .blog-details {
+            color: #0c345d;
+        } */
+
+        #blog .blog-details {
+            width: 50%;
+            line-height: 1.5;
+            font-size: 25px;
+        }
+
+        #blog .blog-details a {
+            text-decoration: none;
+            font-size: 11px;
+            color: #0c345d;
+            font-weight: 700;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        #blog .blog-details a::after {
+            content: "";
+            width: 50px;
+            height: 1px;
+            background-color: #0c345d;
+            position: absolute;
+            top: 4px;
+            right: -60px;
+        }
+
+        #blog .blog-details a:hover {
+            color: #000;
+        }
+
+        #blog .blog-details a:hover::after {
+            background-color: #000;
+        }
+
+        #blog .blog-box h1 {
+            position: absolute;
+            top: -69px;
+            left: 110px;
+            font-size: 70px;
+            font-weight: 700;
+            color: #1b1c1e;
+            z-index: -3;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="jaat">
+        <div>
+            <h2 class="logo">♛ ＤｅｖＬｉｆｅ ♛</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="Tools.html">Tools</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a id="theme-toggle" href="moon.html">🌙</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="blog2">
+        <h2>My Blog</h2>
+        <p>DevLife by Aashish Kumar</p>
+    </div>
+
+    <section id="blog">
+
+        <div class="blog-box first-blog">
+            <div class="blog-img">
+                <img src="images/blog/blog1.1.png" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>My First Family Website</h4>
+                <p>I created this project using basic HTML and CSS. The layout includes...
+                </p>
+                <a href="blog3.html">CONTINUE READING</a>
+            </div>
+            <h1>27/06</h1>
+        </div>
+        <div class="blog-box first-blog">
+            <div class="blog-img">
+                <img src="images/blog/blog2.png" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Building Responsive Web Applications</h4>
+                <p>Strategies and techniques for designing and developing responsive web applications that provide a
+                    great user experience across all devices.
+                </p>
+                <a href="blog4.html">CONTINUE READING</a>
+            </div>
+            <h1>12/06</h1>
+        </div>
+        <div class=" blog-box first-blog">
+            <div class="blog-img">
+                <img src="images/blog/blog3.png" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>My Experience Learning MERN Stack at Ducat</h4>
+                <p>My weekly journey learning MongoDB, Express, React & Node.js with real project building and backend
+                    integration tips.
+                </p>
+                <a href="blog8.html">CONTINUE READING</a>
+            </div>
+            <h1>01/04</h1>
+        </div>
+        <div class="blog-box first-blog">
+            <div class="blog-img">
+                <img src="images/blog/blog4.png" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Blinkit Clone – UI & Branding Experiment</h4>
+                <p>I recreated the Blinkit homepage layout to practice UI design, branding colors, and frontend
+                    alignment techniques.
+                </p>
+                <a href="blog5.html">CONTINUE READING</a>
+            </div>
+            <h1>17/05</h1>
+        </div>
+        <div class=" blog-box first-blog">
+            <div class="blog-img">
+                <img src="images/blog/blog5.png" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Cara – My Clothing Store Website</h4>
+                <p>A minimal, responsive fashion homepage design built with custom logo, product grid, and branded UI
+                    layout.
+                </p>
+                <a href="blog6.html">CONTINUE
+                    READING</a>
+            </div>
+            <h1>02/06</h1>
+        </div>
+        <div class="blog-box first-blog">
+            <div class="blog-img">
+                <img src="images/blog/blog6.png" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>My MCA Journey – Growth, Learning & Coding</h4>
+                <p>A personal reflection on my MCA course, what I learned, and how it helped shape my coding journey.
+                </p>
+                <a href="blog7.html">CONTINUE READING</a>
+            </div>
+            <h1>2025</h1>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a class=" footerab" target="_blank" href="about.html">About</a></li>
+            <li><a class="footerab" target="_blank" href="services.html">Services</a></li>
+            <li><a class="footerab" target="_blank" href="blog1.html">Blog</a></li>
+            <li><a class="footerab" target="_blank" href="contact1.html">Contact</a></li>
+        </ul>
+        <div class="social">
+            <a class="social1" target="_blank" href="https://www.facebook.com/aashish.nain.399/"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a class="social2" target="_blank" href="https://www.linkedin.com/in/aashish-nain-457a32271/"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a class="social3" target="_blank"
+                href="https://www.instagram.com/accounts/login/?next=%2Flovely______nain%2F&source=omni_redirect"><i
+                    class="fab fa-instagram"></i></a>
+            <a class="social4" target="_blank"
+                href="https://www.instagram.com/accounts/login/?next=%2Flovely______nain%2F&source=omni_redirect"><i
+                    class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 𝟐𝟎𝟐𝟓 𝑫𝒆𝒗𝑳𝒊𝒇𝒆 𝒃𝒚 𝑨𝒂𝒔𝒉𝒊𝒔𝒉 𝑵𝒂𝒊𝒏</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

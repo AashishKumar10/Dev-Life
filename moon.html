@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌙 Night Mode - DevLife</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      color: white;
+      font-family: 'Outfit', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .night-header {
+      text-align: center;
+      max-width: 700px;
+    }
+
+    .night-header h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+      color: #c9a349;
+    }
+
+    #typing-text {
+      font-size: 20px;
+      color: #ddd;
+      white-space: pre-wrap;
+      border-right: 2px solid #fff;
+      animation: blink 1s step-end infinite;
+      margin: 0 auto;
+    }
+
+    @keyframes blink {
+
+      from,
+      to {
+        border-color: transparent;
+      }
+
+      50% {
+        border-color: white;
+      }
+    }
+
+    .moon-icon {
+      font-size: 70px;
+      color: #fef08a;
+      animation: float 3s ease-in-out infinite;
+      margin-bottom: 30px;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .back-btn {
+      margin-top: 40px;
+      padding: 10px 25px;
+      background-color: #c9a349;
+      border: none;
+      border-radius: 30px;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: white;
+    }
+
+    audio {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Moon Icon -->
+  <div class="moon-icon">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <!-- Header & Typing Text -->
+  <div class="night-header">
+    <h1>Night Owl Zone 🌌</h1>
+    <p id="typing-text"></p>
+    <button class="back-btn" onclick="goBack()">🔙 Back to DevLife</button>
+  </div>
+
+  <!-- Lofi Background Music -->
+  <audio autoplay loop>
+    <source src="images/Moon/lofi.mp3.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Typing Animation Script -->
+  <script>
+    const text = `🌙 Welcome to the silent side of DevLife — 🌌 In the silence of night, DevLife came to life.  
+  From building my first family website to exploring MERN stack,  
+  every line of code, every blog post, and every tool I used  
+  tells the story of dedication, curiosity, and sleepless dreams.  
+  Welcome to the chapter of peace, reflection, and pure creation. 
+  This is not just another page. This is my moonlight workspace —  
+  calm, focused, and full of silent determination.  
+  You’ve entered my quiet world — welcome to the soul of DevLife. ✨`;
+
+    let index = 0;
+    const speed = 30;
+    const typingElement = document.getElementById("typing-text");
+
+    function typeLetter() {
+      if (index < text.length) {
+        typingElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeLetter, speed);
+      } else {
+        typingElement.style.borderRight = "none";
+      }
+    }
+
+    window.onload = typeLetter;
+
+    function goBack() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+
+</html>

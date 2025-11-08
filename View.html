@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      padding: 0;
+      background-color: #ebe06aa7;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    html {
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .headd h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(39, 37, 37, 0.728);
+      margin-left: 20%;
+      margin-right: 20%;
+      border-radius: 0px 0px 30px 30px;
+      color: white;
+      padding: 30px;
+      font-size: 50px;
+      margin-bottom: 100px;
+    }
+
+    .headd p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid rgba(117, 111, 111, 0.728);
+      border-bottom: 1px solid rgba(117, 111, 111, 0.72);
+      padding: 40px;
+      margin-left: 12.2%;
+      margin-right: 12.2%;
+      font-size: 22px;
+      margin-bottom: 60px;
+    }
+
+    .project-section {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin: 40px auto;
+      padding: 0 20px;
+      width: 100%;
+      max-width: 1000px;
+      /* margin: auto; */
+      flex-wrap: wrap;
+      box-sizing: border-box;
+    }
+
+    .project-box {
+      width: 30%;
+      min-width: 280px;
+      padding: 29px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(117, 111, 111, 0.72);
+      text-align: center;
+      margin-bottom: 30px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-box img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .project-box h3 {
+      margin: 10px 0;
+    }
+
+    .project-box p {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: rgba(18, 16, 16, 0.728);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      align-self: self-start;
+    }
+
+    .btn:hover {
+      background-color: black;
+    }
+
+    .backto {
+      align-items: center;
+      justify-content: center;
+      margin-left: 41%;
+      margin-right: 41%;
+      margin-top: 30px;
+      margin-bottom: 100px;
+      font-size: 22px;
+      padding: 10px 15px;
+      background-color: rgba(18, 16, 16, 0.728);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      display: flex;
+      transition: background-color 0.3s ease;
+    }
+
+    .backto:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="headd">
+    <h2>Welcome to My Projects</h2>
+    <p>“A collection of my personal and learning-based web development projects.”</p>
+  </div>
+
+  <div class="project-section">
+    <div class="project-box">
+      <img src="images/work/family.png" alt="Family Project">
+      <h3>Nain Family </h3>
+      <p>A beautiful HTML/CSS - based static website showing our family members, their names, and work.</p>
+      <a href="Family Introduce/index.html" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="project-box">
+      <img src="images/work/cara.png" alt="Clothes Store">
+      <h3>Online Clothes Store</h3>
+      <p>Built a responsive clothing e-commerce website using HTML, CSS, and icons with product listings and banners.
+      </p>
+      <a href="Clothes  Project/index.html" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="project-box">
+      <img src="images/work/blinkit.png" alt="Blinkit Clone">
+      <h3>Blinkit Clone</h3>
+      <p>Created a Blinkit-style grocery delivery website using HTML, CSS, and JavaScript with product listings,
+        banners, and cart icons.</p>
+      <a href="Blinkit Project/home.html" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="project-box">
+      <img src="images/work/twitter.png" alt="Blinkit Clone">
+      <h3>Twitter Clone</h3>
+      <p>A front-end clone of Twitter built using HTML, CSS, and Font Awesome.
+        It includes a sidebar, tweet box, posts, and widgets – just like the real Twitter layout.</p>
+      <a href="Twitter Project/index.html" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="project-box">
+      <img src="images/work/netflix.png" alt="Blinkit Clone">
+      <h3>Netflix UI</h3>
+      <p>A responsive front-end Netflix UI clone using HTML, CSS, and JavaScript.
+        It includes a dynamic navbar, movie sections like Trending, Top Rated, Action, and a hero banner.</p>
+      <a href="Netflix Project/index.html" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="project-box">
+      <img src="images/work/calcu.png" alt="Blinkit Clone">
+      <h3>QuickMaths</h3>
+      <p>Created a simple functional calculator using HTML, CSS, and JavaScript.
+        It includes buttons for numbers, operations, clear, delete, and calculates real-time results.</p>
+      <a href="Calculator Project/index.html" target="_blank" class="btn">View Project</a>
+    </div>
+  </div>
+
+  <div>
+    <a href="index.html" class="backto">Back to Home Page</a>
+  </div>
+
+</body>
+
+</html>
