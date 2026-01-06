@@ -244,6 +244,7 @@ footer p {
   header.jaat {
     flex-direction: column;
     padding: 12px 15px;
+    border-radius: 0px;
     text-align: center;
   }
 
@@ -441,5 +442,6 @@ footer p {
     font-size: 14px;
   }
 }
+
 
 /* Total Lines = 11000 */
