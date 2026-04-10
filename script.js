@@ -4,7 +4,7 @@ toggle.addEventListener('click', () => {
   toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
 
-const texts = ["Web Developer", "JavaScript Lover", "Tech Explorer"];
+const texts = ["Frontend Developer", "JavaScript Enthusiast", "Tech Explorer, I build responsive and user-friendly web applications."];
 let index = 0;
 let char = 0;
 const typingTarget = document.querySelector("#typing-text span");
